@@ -1,0 +1,25 @@
+[project]
+name = "loan-pricing-engine"
+version = "0.1.0"
+description = "Excel-compatible loan pricing engine"
+authors = [{name = "Greg Gerla", email = "itechwonder777@gmail.com"}]
+requires-python = ">=3.9"
+dependencies = [
+    "pydantic>=1.10.0",
+    "fastapi>=0.85.0",
+    "openpyxl>=3.0.0",
+    "python-dotenv>=0.21.0",
+    "uvicorn>=0.19.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "pytest-cov>=4.0.0",
+    "black>=22.0.0",
+    "flake8>=5.0.0",
+]
+
+[build-system]
+requires = ["setuptools>=61.0.0"]
+build-backend = "setuptools.build_meta"
